@@ -1,0 +1,278 @@
+body {
+    background-color: #031e30;
+}
+
+.mainBox {
+    padding: 0 20% !important;
+    width: auto !important;
+    grid-area: main-box;
+    border: none !important;
+    background: transparent !important;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+    height: 100px;
+}
+
+.div1 {
+    display: block;
+}
+
+.inputBox {
+    font-family: 'Roboto', sans-serif;
+    border: .2rem #99ccff solid;
+    font-size: 1rem;
+    font-weight: bold;
+	margin: 0 auto;
+    padding: .5rem .5rem;
+    border-radius: 6.1875rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #182e3c;;
+    width: 80%;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+    color: rgba(255,255,255,.7)
+}
+
+.searchButton {
+    font-family: 'Roboto', sans-serif;
+    color: #99ccff;
+    border: .2rem #99ccff solid;
+    font-size: 1rem;
+	margin: 0 auto;
+    padding: .5rem .5rem;
+    border-radius: 6.1875rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 20%;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+    float: right;
+    background-color: black
+}
+
+.searchButton:hover {
+    cursor: pointer;
+}
+
+/* Absolute Center Spinner */
+.loading {
+
+  height: 100em;
+  width: 100em;
+
+  margin: auto;
+  margin-top:10px;
+
+}
+
+/* Transparent Overlay */
+.loading:before {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 0.75em;
+  height: 0.75em;
+
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.5) -1.5em 0 0 0, rgba(255, 255, 255, 0.5) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0, rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) 0 1.5em 0 0, rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0, rgba(255, 255, 255, 0.75) -1.5em 0 0 0, rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0, rgba(255, 255, 255, 0.75) 0 -1.5em 0 0, rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Absolute Center Spinner */
+.loadingInvisible {
+
+    height: 100em;
+    width: 100em;
+  
+    margin: auto;
+    margin-top:10px;
+  
+}
+  
+  /* Transparent Overlay */
+.loadingInvisible:before {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+  /* :not(:required) hides these rules from IE9 and below */
+.loadingInvisible:not(:required) {
+    /* hide "loading..." text */
+    font: 0/0 a;
+}
+  
+.loadingInvisible:not(:required):after {
+    content: '';
+    display: block;
+    font-size: 10px;
+    width: 0.75em;
+    height: 0.75em;
+  
+    -webkit-animation: spinner 1500ms infinite linear;
+    -moz-animation: spinner 1500ms infinite linear;
+    -ms-animation: spinner 1500ms infinite linear;
+    -o-animation: spinner 1500ms infinite linear;
+    animation: spinner 1500ms infinite linear;
+    border-radius: 0.5em;
+    -webkit-box-shadow: rgba(3, 30, 48, 0.75) 1.5em 0 0 0, rgba(3, 30, 48, 0.75) 1.1em 1.1em 0 0, rgba(3, 30, 48, 0.75) 0 1.5em 0 0, rgba(3, 30, 48, 0.75) -1.1em 1.1em 0 0, rgba(3, 30, 48, 0.5) -1.5em 0 0 0, rgba(3, 30, 48, 0.5) -1.1em -1.1em 0 0, rgba(3, 30, 48, 0.75) 0 -1.5em 0 0, rgba(3, 30, 48, 0.75) 1.1em -1.1em 0 0;
+    box-shadow: rgba(3, 30, 48, 0.75) 1.5em 0 0 0, rgba(3, 30, 48, 0.75) 1.1em 1.1em 0 0, rgba(3, 30, 48, 0.75) 0 1.5em 0 0, rgba(3, 30, 48, 0.75) -1.1em 1.1em 0 0, rgba(3, 30, 48, 0.75) -1.5em 0 0 0, rgba(3, 30, 48, 0.75) -1.1em -1.1em 0 0, rgba(3, 30, 48, 0.75) 0 -1.5em 0 0, rgba(3, 30, 48, 0.75) 1.1em -1.1em 0 0;
+}
+
+.searching {
+    color: #ffffff;
+}
+
+.searchingInvisible {
+    color: #031e30;
+}
+
+.searchingSmall {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.searchingInvisibleSmall {
+    color: #031e30;
+    font-size: 10px;
+}
+
+.botnav {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+
+.myLink {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.botleft {
+    padding-left: 2%;
+    left: 0;
+    position: fixed;
+    bottom: 2%;
+}
+
+.botright {
+    padding-right: 2%;
+    right: 0;
+    position: fixed;
+    bottom: 2%;
+}
+
+
+@media only screen and (max-width: 810px) {
+    .ContainerGridBox {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(5, 1fr) !important;
+        grid-template-areas: "main-box""box1""box2""box3""box4" !important;
+    }
+
+    .mainBox {
+        padding: 0 !important;
+    }
+
+    .main_content {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto auto !important;
+        grid-template-areas: "main-title""main-icon""main-left""main-cta" !important;
+    }
+    
+}

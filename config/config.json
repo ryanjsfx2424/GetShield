@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "contract",
+    "password": "ContractAnalysis!",
+    "database": "contract_db",
+    "host": "contract-analysis-database.cll3wzmk7o2o.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "root",
+    "password": "MongoDB00!",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "contract",
+    "password": "ContractAnalysis!",
+    "database": "contract_db",
+    "host": "contract-analysis-database.cll3wzmk7o2o.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}

@@ -1,0 +1,19 @@
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: 0xd4A02ad632a73480E53F5182EFD144FbEcC3D943
+Function name: fallback
+PC address: 328
+Estimated Gas Usage: 4240 - 39058
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+Initial State:
+
+Account: [ATTACKER], balance: 0x1000000c280000010, nonce:0, storage:{}
+Account: [SOMEGUY], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], function: unknown, txdata: 0x00, value: 0x1
+Caller: [ATTACKER], function: w(), txdata: 0x205c9cc7, value: 0x0
